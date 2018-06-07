@@ -1,0 +1,31 @@
+<view class='home' wx:if="{{!loading}}">
+  <!-- //  分类 -->
+  <view class="classify">
+    <view class="class" bindtap='open_list' data-sPage="tongguo" data-title='通过率高'>
+      <image class="class_img" src="./img/class1.png" />
+      <text class="class_title">通过率高</text>
+    </view>
+    <view class="class" bindtap='open_list' data-sPage="zhengxin" data-title='不查征信'>
+      <image class="class_img" src="./img/class2.png" />
+      <text class="class_title">不查征信</text>
+    </view>
+    <view class="class" bindtap='open_list' data-sPage="lixi" data-title='超低利息'>
+      <image class="class_img" src="./img/class3.png" />
+      <text class="class_title">超低利息</text>
+    </view>
+    <view class="class" bindtap='open_list' data-sPage="jisu" data-title='极速款快'>
+      <image class="class_img" src="./img/class4.png" />
+      <text class="class_title">下款快</text>
+    </view>
+  </view>
+  <!-- 推荐 -->
+  <view class="recommend">
+    <view class="recommend_title">
+      <image class="recommend_title_img" src="./img/recommend.png" />
+      <text>热门推荐</text>
+    </view>
+    <list prdList="{{prdList}}"></list>
+  </view>
+
+  <Tabbar></Tabbar>
+</view>

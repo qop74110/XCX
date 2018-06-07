@@ -1,0 +1,48 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="form">
+    <view class="label phone">
+      <input type="number" 
+        placeholder='请输入手机号' 
+        class="phone_input" 
+        value="{{phone}}" 
+        data-val='phone'
+        bindinput="bind_val" 
+        maxlength="11">
+      </input>
+    </view>
+    <view class="msg label" hidden='{{hide_msg}}'>
+      <input type="number"
+         placeholder='请输入验证码' 
+         class='msg_input fl' 
+         value='{{uMsg}}' 
+         bindinput='bind_val' 
+         data-val="uMsg"
+         maxlength="4">
+      </input>
+      <text class="msg_btn fr"catch:tap='get_msg'>{{msg_btn_str}}</text>
+    </view>
+  </view>
+  <!-- 数字验证码 -->
+  <view class="calculator" hidden="{{hide_calculator}}" id='calculator'catch:tap='hide_calculator_fn'>
+    <view class="calculator_box">
+      <view class="calculator_center">
+        <view class="fl left">
+          {{arithmetic}}
+        </view>
+        <view class="fr right">
+          <input type="number" 
+            value='{{uSolution}}' 
+            data-val='uSolution'
+            bindinput="bind_val" 
+            placeholder='计算结果' 
+            maxlength="2">
+          </input>
+        </view>
+      </view>
+      <view class="confirm" catch:tap='test_calculator'>确定</view>
+    </view>
+  </view>
+
+  <button class="submit bg_blue" catch:tap='submit'>提交</button>
+</view>

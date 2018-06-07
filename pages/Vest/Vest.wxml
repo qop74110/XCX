@@ -1,0 +1,19 @@
+<view class='vest'>
+  <!-- 表单 -->
+  <view class='form'>
+    <input class='input' placeholder='账目详情' type='text' value="{{_name}}" bindinput="set_name"></input>
+    <input class='input' placeholder='账目金额' type='digit' value="{{_money}}" bindinput="set_money"></input>
+
+    <button class='bg_blue submit' bindtap='submit' loading='{{btn_load}}' disabled="{{btn_load}}">记一笔</button>
+  </view>
+
+  <!-- 账单列表 -->
+  <view class='list'>
+    <view class='total'>合计: {{total_money}}元</view>
+    <view class='item' wx:for="{{list}}" wx:key="{{index}}">
+      {{item._name}}
+      <view class='fr del' bindtap='del' data-i='{{index}}'>删除</view>
+      <view class='fr'>{{item._money}}元</view>
+    </view>
+  </view>
+</view>

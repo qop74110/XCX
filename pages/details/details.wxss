@@ -1,0 +1,54 @@
+.details {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.box, .logo {
+  border-top: 0.5rem solid #eee;
+}
+
+.logo {
+  height: 4.7rem;
+  text-align: center;
+}
+
+.logo_img {
+  margin-top: 0.6rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.box {
+  padding: 0 0.8rem;
+}
+
+.title {
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.98rem;
+}
+
+.li {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 0.8rem;
+  background: white;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.bg_blue {
+  color: white;
+}

@@ -1,0 +1,42 @@
+<!--pages/all_products/all_products.wxml-->
+<view class="all_products">
+  <view class="nav">
+    <view class="screen">
+      <view class='s fl {{selectedColor === sPage.tuijian.index? "theme_color":""}}' 
+        bindtap='screen' 
+        data-spage="{{sPage.tuijian.spage}}" 
+        data-index='{{sPage.tuijian.index}}' >{{sPage.tuijian.text}}</view>
+      <view class='s fl {{selectedColor === sPage.jisu.index? "theme_color":""}}' 
+        data-spage="{{sPage.jisu.spage}}" 
+        bindtap="screen" 
+        data-index='{{sPage.jisu.index}}' >{{sPage.jisu.text}}</view>
+      <view class='s fl {{selectedColor == sPage.qita.index? "theme_color":""}}' 
+        bindtap="screen" 
+        data-index='{{sPage.qita.index}}' >{{sPage.qita.text}}
+        <image src="./arrow.png" class='arrow {{hideOther? "":"arrow_rotate"}}'></image>
+      </view>
+    </view>
+    <view class="Other" hidden="{{hideOther}}" bindtap="screen">
+      <text class='o fl {{O_selectedColor === sPage.tongguo.index? "theme_color":""}}' 
+        data-index='{{sPage.tongguo.index}}' 
+        data-spage="{{sPage.tongguo.spage}}" >{{sPage.tongguo.text}}</text>
+      <text class='o fl {{O_selectedColor === sPage.zhengxin.index? "theme_color":""}}' 
+        data-index='{{sPage.zhengxin.index}}' 
+        data-spage="{{sPage.zhengxin.spage}}" >{{sPage.zhengxin.text}}</text>
+      <text class='o fl {{O_selectedColor === sPage.lixi.index? "theme_color":""}}' 
+        data-index='{{sPage.lixi.index}}' 
+        data-spage="{{sPage.lixi.spage}}" >{{sPage.lixi.text}}</text>
+      <text class='o fl {{O_selectedColor === sPage.zhima.index? "theme_color":""}}' 
+        data-index='{{sPage.zhima.index}}' 
+        data-spage="{{sPage.zhima.spage}}" >{{sPage.zhima.text}}</text>
+      <text class='o fl {{O_selectedColor === sPage.shouji.index? "theme_color":""}}' 
+        data-index='{{sPage.shouji.index}}' 
+        data-spage="{{sPage.shouji.spage}}" >{{sPage.shouji.text}}</text>
+    </view>
+  </view>
+
+
+  <list wx:if="{{prdList}}" prdList="{{prdList}}"></list>
+
+  <Tabbar url='product'></Tabbar>
+</view>

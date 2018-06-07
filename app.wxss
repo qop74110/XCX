@@ -1,0 +1,29 @@
+/**app.wxss**/
+page{
+  font-size: .76rem;
+  color: #333;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.hideText {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.theme_color{
+  color: #049aef
+}
+
+.hide{
+  display: none;
+}
+
+.bg_blue{
+  background: #02ecfd
+}

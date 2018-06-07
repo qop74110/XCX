@@ -1,0 +1,27 @@
+<view class="Tab">
+
+  <view class="tabbar">
+    <view class='bar' wx:if="{{url !== 'home'}}">
+      <image class='icon' src="./img/home.png"></image>
+      <view class='text'>首页</view>
+      <view class='fog' bindtap='tagPage' data-url="home" ></view>
+    </view>
+    <view class='bar' wx:else>
+      <image class='icon' src="./img/home_s.png"></image>
+      <view class='text active'>首页</view>
+      <view class='fog' bindtap='tagPage' data-url="home" ></view>
+    </view>
+
+    <view class='bar' wx:if="{{url !== 'product'}}">
+      <image class='icon' src="./img/products.png"></image>
+      <view class='text'>产品</view>
+      <view class='fog' bindtap='tagPage' data-url="product"></view>
+    </view>
+    <view class='bar' wx:else="{{url !== 'product'}}">
+      <image class='icon' src="./img/products_s.png"></image>
+      <view class='text active'>产品</view>
+      <view class='fog' bindtap='tagPage' data-url="product"></view>
+    </view>
+  </view>
+
+</view>

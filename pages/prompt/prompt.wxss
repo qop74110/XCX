@@ -1,0 +1,23 @@
+.page{
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bg{
+  width: 100vw;
+  height: 177.86666667vw;
+  margin-top: -15vw;
+}
+
+.btnBox{
+  position: absolute;
+  bottom: 0;
+  height: 12vw;
+  width: 100%;
+  background: white;
+}
+
+.bg_blue{
+  color: white;
+}

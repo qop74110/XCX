@@ -1,0 +1,59 @@
+/* pages/all_products/all_products.wxss */
+
+.all_products {
+  padding-top: 2.4rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.screen {
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 0.9rem;
+  text-align: center;
+  background: white;
+  overflow: hidden;
+}
+
+.s {
+  width: 33.333%;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid #eee;
+}
+
+.arrow {
+  width: 0.625rem;
+  height: 0.625rem;
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+
+.arrow_rotate {
+  transform: rotate(-180deg);
+}
+
+.s:first-child {
+  border: 0;
+}
+
+.Other {
+  padding: 0.6rem;
+  height: 4rem;
+  text-align: center;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.o {
+  height: 2rem;
+  line-height: 2rem;
+  width: 33.333%;
+}

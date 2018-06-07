@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "产品大全",
+  "usingComponents": {
+    "list": "../../component/list/list",
+    "Tabbar": "../../component/tabbar/tabbar"
+  }
+}

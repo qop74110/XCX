@@ -1,0 +1,12 @@
+<view class="page">
+  <image src='./bg.png' class="bg"></image>
+
+
+  <view class='btnBox'>
+    <!-- <button>立即申请</button> -->
+    <button open-type='contact' session-from="{{app_name+','+ p_id }}" class='bg_blue' bindtap="apply">
+      立即申请
+    </button>
+  </view>
+
+</view>

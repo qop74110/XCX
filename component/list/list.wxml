@@ -1,0 +1,17 @@
+<!--component/list/list.wxml-->
+<view class="list">
+  <view class="li" wx:for="{{prdList}}" wx:key="{{item.uid}}" data-index="{{index}}" bindtap="open_details">
+    <view class="fl li_logo ">
+      <image class="li_logo_img" src="{{item.logo}}" />
+    </view>
+    <view class="fl li_introduce ">
+      <text class="p_name">{{item.name}}</text>
+      <view class="p_summary hideText">{{item.summary}}</view>
+      <view class="hideText">
+        额度:
+        <text class="blue">{{item.lines}}</text> 利率:
+        <text class="blue">{{item.rate}}</text>
+      </view>
+    </view>
+  </view>
+</view>

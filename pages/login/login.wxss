@@ -1,0 +1,100 @@
+/* pages/login/login.wxss */
+
+.login {
+  display: block;
+  border-top: 0.5rem solid #eee;
+}
+
+.form {
+  width: 18rem;
+  margin: 0 auto;
+  font-size: .8rem;
+}
+
+.label {
+  padding: .4rem .8rem 0;
+  border-bottom: 1px solid #eee;
+  height: 2.4rem;
+}
+
+.label > input, .label > text{
+  height: 2rem;
+  line-height: 2rem;
+  margin-top: .4rem;
+}
+.msg {
+  overflow: hidden;
+}
+.msg_input{
+  width: 8rem;
+}
+.msg_btn{
+  width: 4rem;
+  padding-left:.8rem;
+  border-left: 1px  dotted #eee;
+  text-align: center;
+}
+.submit {
+  width: 18rem;
+  margin: 2.4rem auto 0;
+  z-index: 1;
+  color: white;
+}
+
+.calculator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.calculator_box {
+  position: absolute;
+  top: 50vh;
+  left: 3rem;
+  right: 3rem;
+  /* height: 10rem; */
+  margin-top: -4.6rem;
+  background: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.calculator_center {
+  padding: 1.5rem 1rem;
+  height: 2.4rem;
+}
+
+.left, .right {
+  height: 2.4rme;
+  line-height: 2.4rem;
+}
+
+.left {
+  width: 55%;
+  border-radius: 0.2rem;
+  background: #eee;
+  letter-spacing: 0.5rem;
+}
+
+.right {
+  width: 40%;
+  height: 2.4rem;
+  border: 1px solid #eee;
+  border-radius: 0.2rem;
+}
+
+.right > input {
+  height: 2rem;
+  margin-top: 0.2rem;
+}
+
+.confirm {
+  height: 2.4rem;
+  line-height: 2.4rem;
+  border-top: 1px solid #eee;
+  font-size: 0.88rem;
+}

@@ -1,0 +1,41 @@
+.tabbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 15vw;
+  background: white;
+  border-top: 1rpx solid #ccc;
+  overflow: hidde;
+}
+
+.Tab{
+  height: 15vw;
+}
+
+.bar{
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  position: relative
+}
+
+.icon{
+  width: 6vw;
+  height: 6vw;
+  margin-top: 1vw;
+}
+
+.active{
+  color: aqua
+}
+
+.fog{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

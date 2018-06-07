@@ -1,0 +1,51 @@
+/* banner */
+
+.banner {
+  height: 10rem;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 分类 */
+
+.classify {
+  padding: 0.8rem 0;
+  text-align: center;
+  border-top: 0.5rem solid #eee;
+  border-bottom: 0.5rem solid #eee;
+  overflow: hidden;
+}
+
+.class {
+  float: left;
+  width: 25%;
+  font-size: 0.8rem;
+}
+
+.class_img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.class_title {
+  display: block;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+/* 推荐 */
+
+.recommend_title {
+  padding: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.recommend_title_img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}

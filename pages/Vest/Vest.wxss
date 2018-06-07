@@ -1,0 +1,38 @@
+.vest {
+  padding: 5vw;
+}
+
+.input {
+  height: 12vw;
+  line-height: 12vw;
+  margin-bottom: 3vw;
+  font-size: 3.5vw;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.submit {
+  height: 12vw;
+  line-height: 12vw;
+  color: white;
+}
+
+.list {
+  margin-top: 8vw;
+  font-size: 4vw;
+}
+
+.total {
+  height: 8vw;
+  line-height: 8vw;
+  text-align: right;
+}
+
+.item {
+  height: 12vw;
+  line-height: 12vw;
+}
+
+.del {
+  color: red;
+  margin-left: 3vw;
+}

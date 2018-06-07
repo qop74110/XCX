@@ -1,0 +1,39 @@
+<view class="details" wx:if="{{details}}">
+  <view class="logo">
+    <image class="logo_img" src="{{details.logo}}" />
+  </view>
+  <view class="box">
+    <view class="title">{{details.name}}攻略</view>
+    <view class="li">
+      借款额度：{{details.lines}}
+    </view>
+    <view class="li">
+      借款期限：{{details.timeLimit}}
+    </view>
+    <view class="li">
+      借款费用：{{details.rate}}
+    </view>
+    <view class="li">
+      审批难度：{{details.difficulty}}
+    </view>
+  </view>
+  <view class="box">
+    <view class="title">申请条件</view>
+    <view class="li">
+      1 {{details.demand1}}
+    </view>
+    <view class="li">
+      2 {{details.demand2}}
+    </view>
+    <view class="li">
+      3 {{details.tips1}}
+    </view>
+    <view class="li">
+      4 {{details.tips2}}
+    </view>
+  </view>
+  <view class="submit">
+    <button open-type='contact' session-from="{{app_name+','+ details.uid }}" class='bg_blue' bindtap="apply">申请借款</button>  
+      <!-- <contact-button  size="27" session-from="{{app_name+','+ details.uid }}">申请借款</contact-button>   -->
+  </view>
+</view>

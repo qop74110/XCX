@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/Vest/Vest",
+   
+    
+    "pages/login/login",
+    "pages/details/details",
+    "pages/all_products/all_products",
+    "pages/prompt/prompt"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#02ecfd",
+    "navigationBarTitleText": "真有钱花",
+    "navigationBarTextStyle": "white"
+  },
+ 
+  "debug": false
+}
